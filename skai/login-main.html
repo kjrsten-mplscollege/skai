@@ -1,0 +1,194 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>S K A I | Dashboard</title>
+    <link rel="icon" href="images/favicon.png" type="image/gif">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.typekit.net/abg6rsz.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--<script>-->
+        <!--function results () {-->
+            <!--var address1 = document.getElementById('address').value;-->
+            <!--document.write(address1 + "<br/>");-->
+        <!--}-->
+    <!--</script>-->
+
+
+</head>
+
+<body>
+<div class="container-fluid">
+    <header>
+        <div class="row pt-2 pb-2 skaiblue-40">
+            <div class="col">
+                <span style="font-size:20px;cursor:pointer; margin-top: 20%;" onclick="openNav()">&#9776;</span>
+                <a href="index.html"><img src="images/logo-main.svg" width="120px" class="img-fluid float-right mt-2 mr-2" alt="skai logo"></a>
+
+                        <div id="myNav" class="overlay">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="overlay-content">
+                                <!--<a href="index.html"><img src="images/reverse-logo.svg" style="opacity: 0.2; width: 200px; margin-bottom: 10px;"></a>-->
+                                <img src="images/tatiana.png" class="img-fluid" width="100px"></a>
+                                <h4 class="capitalize white-t">Tatiana</h4>
+                                <p class="elevation-t capitalize mt-0">Elite gold</p>
+                              <a href="dashboard.html">dashboard</a>
+                                <a href="request.html" class="smalltext">request flight</a>
+                                <a href="" class="">schedule pickup</a>
+                                <a href="" class="">SKAI rewards</a>
+                                <a href="" class="">preferences</a>
+                                  <a href="#" class="">in-flight entertainment</a>
+                                  <a href="#" class="">flight history</a></h5>
+
+                            </div>
+                        </div>
+            </div>
+            </div>
+</header>
+
+<main>
+
+    <div class="row mb-3">
+        <div class="col login">
+                <h1 class="pt-2 pb-2">Let's go</h1>
+    </div>
+    </div>
+
+    <div class="row mt-4"></div>
+
+    <div class="row yellow-border">
+        <div class="col pb-2">
+            <h6 class="afterhours-t smalltext mb-3">The nearest SKAILaunch to your current location is:</h6>
+            <span class="blue-icon float-left mr-3"><i class="fas fa-map-marker-alt"></i></span>
+            <p class="smalltext-single sleekblack-t m-0 bold">Mpls Community Technical College rooftop<br>
+            <p class="smalltext-single azure-t">1501 Hennepin Ave, Minneapolis, MN 55403</span></p>
+        </div>
+    </div>
+
+
+<div class="row mt-3"></div>
+
+
+
+    <div class="row">
+        <div class="col blue-left">
+                       <h2 class="sleekblack-t pt-2">Where to?</h2>
+            <p class="afterhours-t smalltext p-0">Enter address below</p>
+            <form class="form-group d-inline">
+                <input type="text" class="form-control d-inline width-form parallelogram-2" id="address" aria-describedby="emailHelp" placeholder="Destination address">
+            </form>
+            <button class=" button-3 parallelogram-2 pt-1" data-toggle="modal" data-target="#myModal"><span class="skew-fix">go</span></button>
+            <span class="blue-icon float-left mr-3 gps"><i class="fas fa-map-marker-alt"></i></span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1415.5661620336648!2d-93.28530321856121!3d44.972721467944325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sminneapolis+college!5e0!3m2!1sen!2sus!4v1544030429473" width="1200" height="1200" allowTransparency="true" frameborder="0" class="img-fluid pt-4 blue-icon" onclick="myFunction()" id="fluid-override" style="border:0"></iframe>
+
+
+
+
+
+
+                <div class="modal fade" id="myModal">
+                    <div class="midnight-left modal-dialog skaiblue-20">
+                        <div class="modal-content">
+                            <div class="modal-header pt-2 pb-2 login">
+                                <h2 class="text-center mt-3">Current status</h2>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class= "modal-body">
+
+                                <p class="smalltext">Your drone is enroute.</p>
+                                <div class="row no-gutters mt-4 mb-2">
+                                    <div class="col-7">
+                                        <div class="pb-1 map-bar3 afterhours"><h6 class="smalltext white-t skew-fix mx-auto d-block pt-2 pl-2">Drone arrival</h6></div></div>
+                                    <div class="col-5">
+                                        <div id="map-bar2" class="pb-1 elevation"><h6 class=" skew-fix smalltext afterhours-t mx-auto d-block pt-2 pl-2">12 minutes</h6></div>
+                                    </div>
+                                </div>
+
+                                <div class="row no-gutters mb-2">
+                                    <div class="col-7">
+                                        <div class="pb-1 map-bar3 afterhours"><h6 class="smalltext white-t skew-fix mx-auto d-block pt-2 pl-2">Arrival time</h6></div></div>
+                                    <div class="col-5">
+                                        <div id="map-bar2" class="pb-1 elevation"><h6 class=" skew-fix smalltext afterhours-t mx-auto d-block pt-2 pl-2">12:33pm</h6></div>
+                                    </div>
+                                </div>
+
+                                <div class="row no-gutters mb-4">
+                                    <div class="col-7">
+                                        <div class="pb-1 map-bar3 afterhours"><h6 class="smalltext white-t skew-fix mx-auto d-block pt-2 pl-2">Flight time</h6></div></div>
+                                    <div class="col-5">
+                                        <div id="map-bar2" class="pb-1 elevation"><h6 class=" skew-fix smalltext afterhours-t mx-auto d-block pt-2 pl-2">20 minutes</h6></div>
+                                    </div>
+                                </div>
+
+                                <p class="smalltext">Your drone ALENA is 11 minutes away at the <span class="bold azure-t">Minneapolis Commuity and Technical College rooftop</span> SKAIbase location</p>
+                                <p class="smalltext">Your destination is <b>Madison, Wisconsin</b></p>
+                                <img src='images/drone-2.png' class="img-fluid">
+                            </div>
+                            </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            <footer>
+                <!--<div class="fixed-bottom navbar-expand-sm navbar-dark sleekback">-->
+                <div class="row fixed-bottom">
+                    <div class="col grey footer-box"><a href="dashboard.html" class="sleekblack-t footer-link"><span class="big-icon"><i class="fas fa-home pt-2"></i></span><p class="footer-p sleekblack-t">Dashboard</p></a></div>
+
+                    <div class="col grey white-left footer-box"> <a href="login-main.html" class= "footer-link"><span class="big-icon">
+                        <i class="fas fa-helicopter pt-2"></i></span><p class="footer-p sleekblack-t">Request</p></a></div>
+
+                    <div class="col-4 grey white-left pl-0 footer-box"> <a href="#" data-toggle="modal" data-target="#myModal" class="sleekblack-t"><span class="big-icon"><i class="fas fa-location-arrow pt-2"></i></span><p class="footer-p sleekblack-t">Status</p></a></div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<script>
+    function myFunction() {
+        let x = document.getElementById("fluid-override");
+        let y = (x.contentWindow || x.contentDocument);
+        if (y.document)y = y.document;
+        y.body.style.backgroundColor = "red";
+    }
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "70%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+<Script></Script>
+    </main>
+</body>
+</html>
+

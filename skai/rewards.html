@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>S K A I | Login</title>
+    <link rel="icon" href="images/favicon.png" type="image/gif">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.typekit.net/abg6rsz.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+<div class="container-fluid">
+    <header>
+        <div class="row pt-1 pb-3">
+            <div class="col">
+                <span style="font-size:20px;cursor:pointer; margin-top: 20%;" onclick="openNav()">&#9776;</span>
+                <a href="index.html"><img src="images/logo-main.svg" width="120px" class="img-fluid float-right mt-2" alt="skai logo"></a>
+
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content ">
+                        <a href="index.html"><img src="images/reverse-logo.svg" width="120px"></a><br>
+                        <a href="styleguide.html">Style guide 2019</a>
+                        <a href="login.html">Client login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="">
+        <div class="row login pt-4">
+            <div class="col">
+                <h1 class="afterhours-t">Fly away</h1>
+                <p class="afterhours-t mobile-p">SKAI's elite drone fleet will have you to your destination in no time.</p>
+            </div>
+        </div>
+
+        <div class="row pt-5 pb-5 blue-left">
+            <div class="col">
+                <h3 class="">SKAI clients</h3>
+                <p class="mobile-p">Login here</p>
+                <button class="mx-auto d-block mb-4 mr-2 button-3 parallelogram-2 pt-1" data-toggle="modal" data-target="#myModal"><span class="skew-fix">Login</span></button>
+
+
+                <div class="modal fade" id="myModal">
+                    <div class="midnight-left modal-dialog skaiblue-20">
+                        <div class="modal-content">
+                            <div class="modal-header login">
+                                <h4 class="text-center mt-3">Client login</h4>
+                                <button type="button" class="close-light" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                <p class="smalltext">Spread your wings and fly away. Enter credentials below.</p>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Login identification</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label small-text" for="exampleCheck1">Keep me logged in</label>
+                                    </div>
+                                    <a class="float-right mb-4 mr-2 button-2 parallelogram-2 mt-4" href="login-main.html">
+                                        <span class="skew-fix">login ></span></a>
+
+                                    <!--<button type="submit" class="btn btn-primary">Submit</button>-->
+                                </form></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg"><img src="images/drone-1.png" alt="Alena drone" class="img-fluid mx-auto d-block"></div>
+        </div>
+
+        <div class="row pt-4 skaiblue-20">
+            <div class="col">
+
+                <h4 class="pb-1">Prospective clients</h4>
+                <p class=" mobile-p mb-4">Your time is too important to deal with delays at the airport, or sit in the nasty backseat of your Uber driver's Acura. Applying for a SKAI account is easy*; get started now.</p>
+                <button class="float-left mb-4 mr-2 button-1 parallelogram-2 pt-1" data-toggle="modal" data-target="#myModal"><span class="skew-fix">Sign up ></span></button>
+                <img src="images/ivan-head.png" alt="prospective client" class="img-fluid" >
+            </div>
+        </div>
+
+
+
+        <footer>
+            <!--<div class="fixed-bottom navbar-expand-sm navbar-dark sleekback">-->
+            <div class="row fixed-bottom">
+                <div class="col grey footer-box"><a href="index.html" class="sleekblack-t footer-link"><span class="big-icon"><i class="fas fa-home pt-2"></i></span><p class="footer-p sleekblack-t">home</p></a></div>
+
+                <div class="col grey white-left footer-box"> <a href="login-main.html" class= "footer-link"><span class="big-icon">
+                        <i class="fas fa-map-marked-alt pt-2"></i></span><p class="footer-p sleekblack-t">Hail</p></a></div>
+
+                <div class="col-4 grey white-left pl-0 footer-box"> <a href="login-main.html" class="sleekblack-t"><span class="big-icon"><i class="fas fa-location-arrow pt-2"></i></span><p class="footer-p sleekblack-t">Status</p></a></div>
+            </div>
+        </footer>
+
+
+
+
+</div>
+</div>
+</footer>
+</div>
+</div>
+</main>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "70%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+</script>
+</body>
+</html>
+
